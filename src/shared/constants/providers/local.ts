@@ -184,5 +184,17 @@ export const LOCAL_PROVIDERS = {
     authHint:
       "No API key required. Configure the local ComfyUI base URL (default: http://localhost:8188).",
     localDefault: "http://localhost:8188",
+    "my-custom-provider": {
+    id: "my-custom-provider",
+    alias: "my-custom-provider",
+    name: "My Local Service",
+    icon: "dns",
+    color: "#4CAF50",
+    textIcon: "MS",
+    website: "http://localhost:20128/",
+    authHint: "API key optional. Configure the local service URL (default: http://localhost:20128/).",
+    localDefault: "http://localhost:20128/",
+    passthroughModels: true,
+  },
   },
 };
